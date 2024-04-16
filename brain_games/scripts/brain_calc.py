@@ -5,7 +5,7 @@ def brain_calc():
     print("Welcome to the Brain Games!")
     name = prompt.string("May I have your name? ")
     print(f"Hello, {name}!")
-    print("What is the result of the expression")
+    print("Find the greatest common divisor of given numbers")
     for _ in range(3):
         num1 = random.randint(1, 30)
         num2 = random.randint(1, 30)

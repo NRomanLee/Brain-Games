@@ -7,7 +7,7 @@ def run_game(get_question_and_answer, instruction):
         "May I have your name? "
     )
 
-    print(f"Hello, {user_name}\n"
+    print(f"Hello, {user_name}!\n"
           f"{instruction}")
 
     for _ in range(MAX_ROUND):

@@ -51,15 +51,7 @@ Here are the games included in this project:
   </tr>
 </table>
 
-### How to Play
 
-To play a game, simply run the corresponding command in your terminal. For example:
-
-```bash
-brain-even
-and etc
-
-### Asciinema
 [![asciicast](https://asciinema.org/a/icsI0YfvfYctlJ6m59m2geJv6.svg)](https://asciinema.org/a/icsI0YfvfYctlJ6m59m2geJv6) 
 [![asciicast](https://asciinema.org/a/jbbKzjUnxy1ckadUjGkDNFI2J.svg)](https://asciinema.org/a/jbbKzjUnxy1ckadUjGkDNFI2J) 
 [![asciicast](https://asciinema.org/a/6NtVLJx6JCpXRd2uiEfsxXhO7.svg)](https://asciinema.org/a/6NtVLJx6JCpXRd2uiEfsxXhO7) 

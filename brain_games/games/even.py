@@ -15,4 +15,3 @@ def get_num_and_even_answer():
 
 def play_game():
     run_game(get_num_and_even_answer, GAME_INSTRUCTIONS["even"])
-    

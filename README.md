@@ -59,9 +59,7 @@ To play a game, simply run the corresponding command in your terminal. For examp
 brain-even
 and etc
 
-
-
-
+### Asciinema
 [![asciicast](https://asciinema.org/a/icsI0YfvfYctlJ6m59m2geJv6.svg)](https://asciinema.org/a/icsI0YfvfYctlJ6m59m2geJv6) - brain even
 [![asciicast](https://asciinema.org/a/jbbKzjUnxy1ckadUjGkDNFI2J.svg)](https://asciinema.org/a/jbbKzjUnxy1ckadUjGkDNFI2J) - brain calc
 [![asciicast](https://asciinema.org/a/6NtVLJx6JCpXRd2uiEfsxXhO7.svg)](https://asciinema.org/a/6NtVLJx6JCpXRd2uiEfsxXhO7) - brain gcd

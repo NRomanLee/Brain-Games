@@ -1,6 +1,4 @@
-from brain_games.utils import generate_rand_num
-from brain_games.constants import GAME_INSTRUCTIONS, PROGRESSION_LENGTH
-from brain_games.the_engine import run_game
+import random
 
 
 def generate_progression(start, step, length):
@@ -8,17 +6,13 @@ def generate_progression(start, step, length):
 
 
 def generate_progression_hidden_num():
-
-    start_num, step = generate_rand_num(), generate_rand_num()
+    PROGRESSION_LENGTH = 10
+    start_num, step = random.randint(1, 100), random.randint(1, 10)
     progression = generate_progression(start_num, step, PROGRESSION_LENGTH)
 
-    index_to_replace = generate_rand_num(0, PROGRESSION_LENGTH - 1)
+    index_to_replace = random.randint(0, PROGRESSION_LENGTH - 1)
     hidden_num = progression[index_to_replace]
     progression[index_to_replace] = '..'
 
     missed = " ".join(map(str, progression))
     return missed, str(hidden_num)
-
-
-def play_progression_game():
-    run_game(generate_progression_hidden_num, GAME_INSTRUCTIONS["progression"])

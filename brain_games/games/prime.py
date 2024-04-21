@@ -1,6 +1,4 @@
-from brain_games.utils import generate_rand_num
-from brain_games.the_engine import run_game
-from brain_games.constants import GAME_INSTRUCTIONS
+import random
 
 
 def is_prime(num):
@@ -14,10 +12,6 @@ def is_prime(num):
 
 def get_number_and_prime_answer():
 
-    num = generate_rand_num()
+    num = random.randint(1, 20)
     answer = 'yes' if is_prime(num) else 'no'
     return num, answer
-
-
-def play_prime():
-    run_game(get_number_and_prime_answer, GAME_INSTRUCTIONS["prime"])

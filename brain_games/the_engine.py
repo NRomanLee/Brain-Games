@@ -1,5 +1,4 @@
 import prompt
-from brain_games.constants import MAX_ROUND
 
 
 def run_game(get_question_and_answer, instruction):
@@ -11,7 +10,7 @@ def run_game(get_question_and_answer, instruction):
     print(f"Hello, {user_name}\n"
           f"{instruction}")
 
-    for _ in range(MAX_ROUND):
+    for _ in range(3):
         question, correct_answer = get_question_and_answer()
         user_answer = prompt.string(f'Question: {question}\n'
                                     'Your answer: ')

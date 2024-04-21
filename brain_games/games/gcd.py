@@ -1,5 +1,6 @@
 import math
 import random
+from brain_games.the_engine import run_game
 
 
 def get_gcd(first_num, second_num):
@@ -13,3 +14,8 @@ def get_number_pair_and_gcd():
     nums = f'{first_num} {second_num}'
 
     return nums, str(gcd)
+
+
+def gcd_game():
+    run_game(get_number_pair_and_gcd,
+             'Find the greatest common divisor of given numbers.')

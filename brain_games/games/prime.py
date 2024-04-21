@@ -12,6 +12,7 @@ def is_prime(num):
 
 def get_number_and_prime_answer():
 
-    num = random.randint(1, 20)
-    answer = 'yes' if is_prime(num) else 'no'
-    return num, answer
+    number = random.randint(1, 20)
+    prime_check = is_prime(number)
+    answer = 'yes' if prime_check else 'no'
+    return number, answer

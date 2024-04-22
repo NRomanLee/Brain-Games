@@ -1,6 +1,9 @@
 import prompt
 
 
+MAX_ROUND = 3
+
+
 def run_game(get_question_and_answer, instruction):
     user_name = prompt.string(
         'Welcome to the Brain Games!\n'

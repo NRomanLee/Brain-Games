@@ -1,5 +1,8 @@
 import random
-from brain_games.the_engine import run_game
+
+
+MIN_NUMBER = 1
+MAX_NUMBER = 100
 
 
 def is_prime(num):
@@ -12,12 +15,7 @@ def is_prime(num):
 
 
 def get_number_and_prime_answer():
-    number = random.randint(1, 100)
+    number = random.randint(MIN_NUMBER, MAX_NUMBER)
     prime_check = is_prime(number)
     answer = 'yes' if prime_check else 'no'
     return str(number), answer
-
-
-def play_prime():
-    run_game(get_number_and_prime_answer,
-             'Answer "yes" if given number is prime. Otherwise answer "no".')

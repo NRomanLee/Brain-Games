@@ -1,5 +1,7 @@
 import random
-from brain_games.the_engine import run_game
+
+
+PROGRESSION_LENGTH = 10
 
 
 def generate_progression(start, step, length):
@@ -7,7 +9,6 @@ def generate_progression(start, step, length):
 
 
 def generate_progression_hidden_num():
-    PROGRESSION_LENGTH = 10
     start_num, step = random.randint(1, 100), random.randint(1, 10)
     progression = generate_progression(start_num, step, PROGRESSION_LENGTH)
 
@@ -17,8 +18,3 @@ def generate_progression_hidden_num():
 
     missed = " ".join(map(str, progression))
     return missed, str(hidden_num)
-
-
-def play_progression_game():
-    run_game(generate_progression_hidden_num,
-             'What number is missing in the progression?')

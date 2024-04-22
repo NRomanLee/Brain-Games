@@ -1,21 +1,13 @@
 import math
 import random
-from brain_games.the_engine import run_game
-
-
-def get_gcd(first_num, second_num):
-    return math.gcd(first_num, second_num)
+MIN_NUMBER = 1
+MAX_NUMBER = 20
 
 
 def get_number_pair_and_gcd():
-    first_num = random.randint(1, 20)
-    second_num = random.randint(1, 20)
-    gcd = get_gcd(first_num, second_num)
-    nums = f'{first_num} {second_num}'
+    first_num = random.randint(MIN_NUMBER, MAX_NUMBER)
+    second_num = random.randint(MIN_NUMBER, MAX_NUMBER)
+    gcd = math.gcd(first_num, second_num)
+    num = f'{first_num} {second_num}'
 
-    return nums, str(gcd)
-
-
-def gcd_game():
-    run_game(get_number_pair_and_gcd,
-             'Find the greatest common divisor of given numbers.')
+    return num, str(gcd)

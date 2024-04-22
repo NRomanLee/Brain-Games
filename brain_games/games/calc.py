@@ -1,10 +1,15 @@
 import random
 
 
+MIN_NUMBER = 1
+MAX_NUMBER = 20
+ACTIONS = ['+', '-', '*']
+
+
 def get_math_expression_and_result():
-    first_num = random.randint(1, 20)
-    second_num = random.randint(1, 20)
-    action = random.choice(['+', '-', '*'])
+    first_num = random.randint(MIN_NUMBER, MAX_NUMBER)
+    second_num = random.randint(MIN_NUMBER, MAX_NUMBER)
+    action = random.choice(ACTIONS)
     if action == '+':
         result = first_num + second_num
     elif action == '-':

@@ -1,5 +1,8 @@
 import random
-from brain_games.the_engine import run_game
+
+
+MIN_NUMBER = 1
+MAX_NUMBER = 20
 
 
 def is_even(num):
@@ -7,11 +10,6 @@ def is_even(num):
 
 
 def get_num_and_even_answer():
-    num = random.randint(1, 20)
+    num = random.randint(MIN_NUMBER, MAX_NUMBER)
     correct_answer = 'yes' if is_even(num) else 'no'
     return num, correct_answer
-
-
-def play_game():
-    run_game(get_num_and_even_answer,
-             '''Answer "yes" if the number is even, otherwise answer "no".''')

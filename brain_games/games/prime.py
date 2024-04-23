@@ -3,6 +3,7 @@ import random
 
 MIN_NUMBER = 1
 MAX_NUMBER = 100
+INSTRUCTION = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 
 def is_prime(num):
@@ -14,7 +15,7 @@ def is_prime(num):
     return True
 
 
-def get_number_and_prime_answer():
+def get_question_and_answer():
     number = random.randint(MIN_NUMBER, MAX_NUMBER)
     prime_check = is_prime(number)
     answer = 'yes' if prime_check else 'no'

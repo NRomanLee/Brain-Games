@@ -4,9 +4,10 @@ import random
 MIN_NUMBER = 1
 MAX_NUMBER = 20
 ACTIONS = ['+', '-', '*']
+INSTRUCTION = '''What is the result of the expression?'''
 
 
-def get_math_expression_and_result():
+def get_question_and_answer():
     first_num = random.randint(MIN_NUMBER, MAX_NUMBER)
     second_num = random.randint(MIN_NUMBER, MAX_NUMBER)
     action = random.choice(ACTIONS)
